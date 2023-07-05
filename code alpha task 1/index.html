@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chiru</title>
+    <style>
+        body {
+            background-color: hsl(286, 67%, 24%);
+            font-family: "Raleway", sans-serif;
+        }
+
+
+        .nav-tags {}
+
+        .nav-tags ul {
+            list-style: none;
+            display: flex;
+            gap: 60px;
+            font-size: 25px;
+
+        }
+
+        .navigation {
+            display: grid;
+            grid-template-columns: 2.6fr 1fr;
+            background-color: hsl(140, 31%, 54%);
+        }
+
+        ul li a {
+            text-decoration: none;
+            color: hsl(317, 31%, 42%);
+        }
+
+        ul li a:hover {
+            text-decoration: underline;
+        }
+
+        .middle-image {
+            margin-top: 3pc;
+            text-align: center;
+            line-height: 1.5;
+            background-color: hsl(217, 28%, 15%);
+            padding: 20px;
+            background-image: url(https://medali198.github.io/chiru-dark-theme-landing-page/images/bg-curvy-mobile.svg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: bottom;
+        }
+
+        .card {
+            max-width: 400px;
+            text-align: center;
+            margin-bottom: 4pc;
+        }
+
+        .all-cards {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 200px;
+            margin-top: 5pc;
+            color: rgb(132, 242, 137);
+        }
+
+        .card h1 {
+            font-size: 20px;
+        }
+
+        .card p {
+            font-size: 15px;
+            font-family: "Open Sans", sans-serif;
+        }
+
+        .text {
+            width: 600px;
+        }
+
+        .link {
+            color: rgba(86, 157, 152, 0.9);
+            font-size: 20px;
+        }
+
+        .link:hover {
+            color: rgb(56, 44, 78);
+        }
+
+
+        .bottom-page {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: rgb(65, 119, 139);
+            padding: 5pc;
+        }
+
+        .review-1 {
+            width: 400px;
+            font-size: 20px;
+            padding: 20px;
+            background-color: hsl(219, 30%, 18%);
+            box-shadow: 1px 0px 2px 4px hsl(217deg 28% 15%);
+            border-radius: 10px;
+            color: rgb(55, 110, 93);
+            opacity: 0.8;
+
+        }
+
+        .name-profile {
+            display: flex;
+            align-items: center;
+            line-height: 0.5;
+        }
+        .reviews{
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 5pc;
+        }
+
+
+
+
+
+
+
+
+        @media (max-width:700px)
+        {
+           .navigation{
+               display: flex;
+               flex-direction: column;
+               
+               align-items: center;
+           }
+           .middle-image img{
+               height: 400px;
+               width: 350px;
+           }
+           .all-cards{
+               display: flex;
+               flex-direction: column;
+             
+           }
+           .card{
+               width: 200px;
+               line-height: 1.5;
+              
+           }
+           .nesst-two-cards{
+               margin-top: -200px;
+           }
+           .bottom-page{
+               display: flex;
+               flex-direction: column;
+               justify-content: center;
+               align-items: center;
+           }
+           .text{
+               width: 300px;
+               text-align: center;
+           }
+           .bottom-page img{
+               width: 400px;
+               height: 400px;
+           }
+           .reviews{
+               display: flex;
+               flex-direction: column;
+               justify-content: center;
+               align-items: center;
+           }
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="complete-page">
+        <header>
+            <div class="navigation">
+                <div style="padding: 20px;" class="logo">
+                    <img src="c logo.jpeg">
+                </div>
+                <div class="nav-tags">
+                    <ul>
+                        <li><a href="">Features</a></li>
+                        <li><a href="">Team</a></li>
+                        <li><a href="">Sign In</a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <div class="middle-image">
+            <img src="illustration-intro.png">
+            <h1 style="font-size: 20px; max-width: 800px; margin: 0px auto; margin-bottom: 1pc; color: rgb(0, 0, 89);">All your files in one
+                secure location,
+                accessible anywhere.</h1>
+            <p style="font-size: 20px; max-width: 600px; margin: 0px auto; color: rgb(64, 60, 94);">chiru stores all your most important files in
+                one
+                secure location. Access them wherever you need, share and
+                collaborate with friends family, and co-workers.</p>
+            <button style="margin-top: 10px; font-size: 10px; padding: 5px; padding-left: 25px; padding-right: 25px; border-radius: 15px; border: none; background-image: linear-gradient(
+                90deg
+                , hsl(247, 100%, 16%), hsl(198, 42%, 46%));cursor: pointer;">Get Started</button>
+        </div>
+
+        <div class="all-cards">
+            <div class="first-two-cards">
+                <div class="card">
+                    <img src="img-1.svg">
+                    <h1>Access your files, anywhere</h1>
+                    <p>The ability to use a smartphone, tablet, or computer to access your account means your files
+                        follow you everywhere.</p>
+                </div>
+                <div class="card">
+                    <img src="img-1.svg">
+                    <h1>Security you can trust</h1>
+                    <p>2-factor authentication and user-controlled encryption are just a couple of the security features
+                        we allow to help secure your files.</p>
+                </div>
+            </div>
+            <div class="nesst-two-cards">
+                <div class="card">
+                    <img src="img-1.svg">
+                    <h1>Real-time collaboration</h1>
+                    <p>Securely share files and folders with friends, family and colleagues for live collaboration. No
+                        email attachments required.</p>
+                </div>
+                <div class="card">
+                    <img src="img-1.svg">
+                    <h1>Store any type of file</h1>
+                    <p>Whether you're sharing holidays photos or work documents, chiru has you covered allowing for all
+                        file types to be securely stored and shared.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="bottom-page">
+            <div class="image-bottom">
+                <img src="illustration-stay-productive.png">
+            </div>
+            <div class="text">
+                <h1 style="font-size: 50px;">Stay productive, wherever you are</h1>
+                <p style="font-size: 20px;">Never let location be an issue when accessing your files. chiru has you
+                    covered for all of your file storage needs.</p>
+                <p style="font-size: 20px;">Securely share files and folders with friends, family and colleagues for
+                    live collaboration. No email attachmentsrequired.</p>
+                <a class="link" href="#" style="">See how chiru works</a>
+            </div>
+        </div>
+
+        <div class="reviews">
+            <div class="review-1">
+                <p>chiru has improved our team productivity by an order of magnitude. Since making the switch our team
+                    has become a well-oiled collaboration machine.</p>
+                <div class="name-profile">
+                    <img style="border-radius: 50%;" height="50px" src="sundar.jpeg">
+                    <div style="margin-left: 1pc;">
+                        <p style="font-size: 16px;">Sundar pichai</p>
+                        <p style="font-size: 16px;">Founder & CEO, Google
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="review-1">
+                <p>chiru has improved our team productivity by an order of magnitude. Since making the switch our team
+                    has become a well-oiled collaboration machine.</p>
+                <div class="name-profile">
+                    <img style="border-radius: 50%;" height="50px" src="sundar.jpeg">
+                    <div style="margin-left: 1pc;">
+                        <p style="font-size: 16px;">sundar pichai</p>
+                        <p style="font-size: 16px;">Founder & CEO, Google
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="review-1">
+                <p>chiru has improved our team productivity by an order of magnitude. Since making the switch our team
+                    has become a well-oiled collaboration machine.</p>
+                <div class="name-profile">
+                    <img style="border-radius: 50%;" height="50px" src="sundar.jpeg">
+                    <div style="margin-left: 1pc;">
+                        <p style="font-size: 16px;">Sundar pichai</p>
+                        <p style="font-size: 16px;">Founder & CEO, Google
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
